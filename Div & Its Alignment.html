@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div & It's Alignment</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .outerbody {
+      margin: 20px auto;
+      width: 40%;
+      border: 2px solid white;
+    }
+
+    header {
+      margin: 10px auto;
+      width: 95%;
+      border: 2px solid red;
+    }
+
+    nav {
+      margin: 10px auto 5px auto;
+      width: 95%;
+      border: 2px solid yellowgreen;
+    }
+
+    .innerbody{
+        align-items: center;
+        font-size: 30px;
+        margin: auto;
+        width: 95%;
+        display: flex;
+    }
+
+    .innerleftbody{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .leftbody1{
+        margin: 10px auto;
+        height: 150px;
+        border: 2px solid palevioletred;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .leftbody2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin: 10px auto;
+        height: 350px;
+        border: 2px solid green;
+        
+    }
+
+    .leftbody2 span{
+      display: block;
+        border: 1px solid white;
+    }
+
+    .innerrightbody{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 50%;
+        height: 513px;
+        border: 2px solid yellow;
+    }
+
+    footer {
+      margin: 5px auto 10px auto;
+      width: 95%;
+      border: 2px solid skyblue;
+    }
+  </style>
+  <body>
+    <div class="outerbody">
+      <header>Header</header>
+      <nav>Nav</nav>
+        <div class="innerbody">
+            <div class="innerleftbody">
+                <div class="leftbody1">Section</div>
+                <div class="leftbody2">Main<span>.Artical</span></div>
+            </div>
+            <div class="innerrightbody">Aside</div>
+        </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
